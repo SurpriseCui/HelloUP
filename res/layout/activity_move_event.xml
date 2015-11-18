@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DEDCD2"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_margin="0.5dip"
+            android:background="#DEDCD2" >
+
+            <TextView
+                android:text="日期"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="步数"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="距离"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <TableLayout
+            android:id="@+id/TableLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#DEDCD2"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_margin="0.5dip"
+                android:background="#DEDCD2" >
+
+                <TextView
+                    android:layout_margin="1dip"
+                    android:background="#FFFFFF"
+                    android:text=""
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_margin="1dip"
+                    android:background="#FFFFFF"
+                    android:text=""
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_margin="1dip"
+                    android:background="#FFFFFF"
+                    android:text=""
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/OK_btn"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:text="停止震动" />
+
+    <TextView
+        android:id="@+id/State_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize= "24sp"
+        android:text="状态：静止" />
+
+</LinearLayout>
